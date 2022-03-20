@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./flexbox.css" />
+        <title>Chit Chat Dynamo</title>
+        <!--Final Application - Chit Chat Dynamo-->
+        <!--James Spickard-->
+        <!--Regis University-->
+        <!--MSSE661 - Web Software Development-->
+        <!--Spring 2022 8 Week 2 Semester-->
+        <!--Professor Morgan Worrell-->
+        <!--PLANNED RELEASE: May 1, 2022-->
+    </head>
+
+    <script src="../src/app.js"></script>
+
+    <body>
+        <div class="main">
+            <header>
+                <nav>
+                    <ul id="getHeader"><script>getHeader();</script></ul>
+                </nav>
+            </header>
+
+            <div class="content">
+                <form class="login" action="">
+                    <label for="username">
+                        Username:
+                        <input id="username" type="text" />
+                    </label>
+                    <label for="password">
+                        Password:
+                        <input id="password" type="password" />
+                    </label>
+                    <button type="button" onclick="loginAttempt(document.getElementById('username').value, document.getElementById('password').value);">Login</button>
+                </form>
+            </div>
+
+            <footer>
+                <nav>
+                    <ul id="getFooter"><script>getFooter();</script></ul>
+                </nav>
+            </footer>
+        </div>
+    </body>
+</html>
