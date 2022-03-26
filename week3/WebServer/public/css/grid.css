@@ -1,0 +1,32 @@
+/*
+    Module 2 - Basic Fluid Layout
+    James Spickard
+    Regis University
+    MSSE661 - Web Software Development
+    Spring 2022 8 Week 2 Semester
+    Professor Morgan Worrell
+    March 20, 2022
+*/
+.main {
+    width: 100%;
+}
+
+.span-12 {
+    width: 100%;
+}
+
+.span-8 {
+    width: 75%;
+}
+
+.span-6 {
+    width: 50%;
+}
+
+.span-3 {
+    width: 25%;
+}
+
+.span-1 {
+    width: 1%;
+}
