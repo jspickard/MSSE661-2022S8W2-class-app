@@ -1,0 +1,14 @@
+{
+  "name": "week3",
+  "version": "1.0.0",
+  "description": "Module 2 - Basic Fluid Layout <br />\r James Spickard <br />\r Regis University <br />\r MSSE661 - Web Software Development <br />\r Spring 2022 8 Week 2 Semester <br />\r Professor Morgan Worrell <br />\r March 20, 2022",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.3"
+  }
+}

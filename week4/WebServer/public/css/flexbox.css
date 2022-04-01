@@ -1,24 +1,16 @@
 /*
-    Final Application - Chit Chat Dynamo
+    Module 2 - Basic Fluid Layout
     James Spickard
     Regis University
     MSSE661 - Web Software Development
     Spring 2022 8 Week 2 Semester
     Professor Morgan Worrell
-    PLANNED RELEASE: May 1, 2022
+    March 20, 2022
 */
 
 * {
     margin: 0;
     padding: 0;
-}
-
-body {
-    background-color:aliceblue;
-}
-
-button {
-    background-color:lightgray;
 }
 
 .main {
@@ -31,7 +23,7 @@ header {
     top: 0;
     height: 50px;
     width: 100%;
-    background-color: lightseagreen;
+    background-color: lightyellow;
 }
 
 nav {
@@ -41,7 +33,7 @@ nav {
 
 nav ul {
     display: flex;
-    width: 500px;
+    width: 300px;
     justify-content: center;
     margin: 0 auto;
 }
@@ -49,10 +41,6 @@ nav ul {
 li {
     padding: 0 10px;
     width: 50px;
-}
-
-input {
-    background-color: white;
 }
 
 ul,
@@ -65,7 +53,19 @@ li {
     width: 100%;
     display: flex;
     justify-content: center;
-    margin-top: 150px;
+    margin-top: 50px;
+}
+
+.contentAbout {
+    min-height: 100%;
+    width: 100%;
+    display: block;
+    align-content: center;
+    align-items: center;
+    align-self: center;
+    justify-content: center;
+    margin-top: 50px;
+    flex-direction: column;
 }
 
 .login {
@@ -78,5 +78,5 @@ footer {
     bottom: 0;
     height: 100px;
     width: 100%;
-    background-color: teal;
+    background-color: lightcoral;
 }
