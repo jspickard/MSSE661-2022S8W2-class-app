@@ -1,20 +1,55 @@
-/*
-    Module 2 - Basic Fluid Layout
-    James Spickard
-    Regis University
-    MSSE661 - Web Software Development
-    Spring 2022 8 Week 2 Semester
-    Professor Morgan Worrell
-    March 20, 2022
-*/
+const doLogin = function(e) {
+    e.preventDefault();
+    const username = document.getElementById("username").value;
+    const password = document.getElementById("password").value;
+    
+    login({
+        username: username,
+        password: password
+    }).then(function(res) {
+        if (res.status === 200) {
+            window.location.href = "home.html";
+        } 
+        else{
+            alert('Could not auth user.'); //redundant with auth.controller, how to display msg?
+        }
+    });
+};
 
-class User{
+
+const doRegister = function(e) {
+    e.preventDefault();
+    const username = document.getElementById("username").value;
+    const password = document.getElementById("password").value;
+    const email = document.getElementById("email").value;
+    
+    register({
+        username: username,
+        password: password,
+        email: email
+    }).then(function(res) {
+        if (res.status === 500) {
+            alert('Could not register user.'); //redundant with auth.controller, how to display msg?
+        } 
+        else{
+            window.location.href = "home.html";
+        }
+    });
+};
+
+const doLogout = function(e) {
+    e.preventDefault();
+};
+
+/*class User{
     username;
     password;
+    email;
 
     constructor(username, password) {
         this.username = username;
         this.password = password;
+        this.email = email;
     }
 }
 
@@ -39,4 +74,6 @@ function autenticateOnlyUser(enteredCredentials) {
     if (usernameCheck & passwordCheck) {output = "Login Successful!\r'I am speechless. Speechless! I have no speech!'";}
     else {output = "Login Failed!\r'You're killing independent George!'";}
     return (output);
-}
+}*/
+
+

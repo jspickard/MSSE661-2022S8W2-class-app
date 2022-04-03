@@ -1,19 +1,22 @@
-# Module 3 - Create a Web Server
-## James Spickard
-## Regis University
-## MSSE661 - Web Software Development
-## Spring 2022 8 Week 2 Semester
-## Professor Morgan Worrell
-## March 27, 2022
+# WebServer
+- James Spickard
+- Regis University
+- MSSE661 - Web Software Development
+- Spring 2022 8 Week 2 Semester
+- Professor Morgan Worrell
+- April 3, 2022
+- Module 4 - Basic Authentication
 
 ## Instructions (tested on Windows 10 machine)
-1. Open project in VS Code.
-2. In VS Code terminal, type "npm install".
-3. In VS Code terminal, type "node server/index.js".
+1. Ensure node and node package manager is installed on the machine.
+2. Open project in VS Code.
+3. In VS Code terminal, type "npm install".
+4. In VS Code terminal, type "node server/index.js".
 
 
 ## Testing
-1. Go to http://localhost:3000/
+1. Launch MongoAPI https://github.com/jspickard/MSSE661-2022S8W2-mongo-api.git (see MongoAPI readme for details).
+2. Go to http://localhost:4000/
 2. Explore the site :)
 
 ## References
