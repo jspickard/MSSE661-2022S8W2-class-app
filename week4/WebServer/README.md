@@ -11,13 +11,13 @@
 1. Ensure node and node package manager is installed on the machine.
 2. Open project in VS Code.
 3. In VS Code terminal, type "npm install".
-4. In VS Code terminal, type "node server/index.js".
+4. In VS Code terminal, type "npm start".
 
 
 ## Testing
 1. Launch MongoAPI https://github.com/jspickard/MSSE661-2022S8W2-mongo-api.git (see MongoAPI readme for details).
 2. Go to http://localhost:4000/
-2. Explore the site :)
+2. Explore the site :). Only basic authentication implemented (can create user and _login, cannot logout or see any user customized details).
 
 ## References
 Hurtado, A. (2020, July 2). Seinfeld Turns 30! Celebrate the Sitcom About Nothing With Over 100 Quotes from the Show. Parade.Com. Retrieved March 26, 2022, from https://parade.com/1043332/alexandra-hurtado/best-seinfeld-quotes/
