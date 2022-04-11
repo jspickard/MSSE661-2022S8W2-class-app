@@ -6,14 +6,20 @@ const doLogin = function(e) {
     login({
         username: username,
         password: password
-    }).then(function(res) {
+    }).then((r) => r.json())
+
+    .then(function(res) {
+        console.log(res)
         if (res.status === 200) {
             window.location.href = "home.html";
         } 
         else{
-            alert('Could not auth user.'); //redundant with auth.controller, how to display msg?
+            console.log(res.msg);
+            alert(res.msg); 
         }
-    });
+    }) /*.catch( function (res) {
+            alert(res.body.msg)
+    })*/
 };
 
 
