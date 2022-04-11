@@ -43,11 +43,9 @@ const doRegister = (e) => {
     const refresh_token = res.token; //eventually populate differently
 
     if (res.msg === null || res.msg === undefined) {
-        setStorage('isAuth', auth);
-        setStorage('access_token', access_token);
-        setStorage('refresh_token', refresh_token);
-
-        window.location.href = "quotes.html";
+        logout(res);
+        alert("You have been registered! You can now login."); 
+        window.location.href = '/';
     } 
     else{
         alert(res.msg); 
