@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./css/flexbox.css" />
+        <title>Build Fluid Layout</title>
+    </head>
+
+    <body>
+        <div class="main">
+            <header>
+                <nav>
+                    <ul>
+                        <li><a href="./index.html">Index</a></li>
+                        <li><a href="./home.html">Home</a></li>
+                        <li><a href="./about.html">About</a></li>
+                        <li><a href="./quotes.html">My Quotes</a></li>
+                        <button id="logout" onclick="doLogout(event)" align-items:right>Logout</button>
+
+                    </ul>
+                </nav>
+            </header>
+
+            <div class="content">
+                <form class="login" action="">
+                    <label for="username">
+                        Username:
+                        <input id="username" type="text" />
+                    </label>
+                    <label for="password">
+                        Password:
+                        <input id="password" type="password" />
+                    </label>
+                    <label for="email">
+                        Email:
+                        <input id="email" type="email" />
+                    </label>
+                    <button type="button" onclick="doRegister(event)">Register</button>
+                </form>
+            </div>
+
+            <footer>
+                <nav>
+                    <ul>
+                        <li><a href="./index.html">Index</a></li>
+                        <li><a href="./home.html">Home</a></li>
+                        <li><a href="./about.html">About</a></li>
+                        <li><a href="./quotes.html">My Quotes</a></li>
+                        <p>Author: <a href="https://github.com/jspickard">James Spickard</a></p>
+                    </ul>
+                </nav>
+            </footer>
+        </div>
+    </body>
+    <script src="./src/api.config.js"></script>
+    <script src="./src/simple-storage.js"></script>
+    <script src="./src/service-helpers.js"></script>
+    <script src="./src/auth.service.js"></script>
+    <script src="./src/quote.service.js"></script>
+    <script src="./src/route-guard.js"></script>
+    <script src="./src/auth.js"></script>
+    <script src="./src/app.js"></script>
+
+</html>
