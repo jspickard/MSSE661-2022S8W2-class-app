@@ -8,6 +8,7 @@ const setStorage = (key, data) => {
   const getStorage = (key) => {
     const encodedData = localStorage.getItem(key);
     const decodedData = atob(encodedData);
+    console.log(decodedData);
     return JSON.parse(decodedData); // {}
   };
   

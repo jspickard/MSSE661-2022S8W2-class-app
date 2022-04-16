@@ -1,6 +1,6 @@
 //process message requests, makes async and returns as JSON
 const access_token = storageHasData() ? getStorage('access_token') : '';
-const token = 'Bearer' + access_token;
+const token = 'Bearer ' + access_token;
 
 //declare various options
 const DEFAULT_OPTIONS = {

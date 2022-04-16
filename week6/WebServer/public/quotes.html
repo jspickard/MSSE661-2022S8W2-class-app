@@ -22,8 +22,29 @@
                 </nav>
             </header>
 
-            <div class="contentAbout">
-                <div id="quotes-div">
+            <div class="contentAbout" id="content">
+                <div id="new-quote-form-div">Add new quote:
+                    <form id="new-quote-form" class="quote-form" action="">
+                        <label for="owner">
+                            Owner:
+                            <input id="owner" type="text" />
+                        </label>
+                        <label for="quote">
+                            Quote:
+                            <input id="quote" type="text" />
+                        </label>
+                        <label for="episode">
+                            Episode:
+                            <input id="episode" type="number" />
+                        </label>
+                        <label for="air_date">
+                            Air Date:
+                            <input id="air_date" type="date" />
+                        </label>
+                        <button type="button" onclick="doCreateQuote(event)">Submit</button>
+                    </form>
+                </div>
+                <div id="quotes-display">Current Entries:
                     <div>Nothing here yet...</div>
                 </div>
             </div>
@@ -51,5 +72,6 @@
     <script src="./src/build-quotes-list.js"></script>
     <script src="./src/auth.js"></script>
     <script src="./src/app.js"></script>
+    <script src="./src/quotes.js"></script>
 
 </html>

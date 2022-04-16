@@ -64,6 +64,20 @@ li {
     flex-direction: column;
 }
 
+.quote-form {
+    display: flex;
+    flex-direction:row;
+    padding-bottom: 15px;
+}
+
+.quote-record {
+    padding-bottom: 15px;
+}
+
+.quote-text {
+    width: 1000px;
+}
+
 footer {
     position: fixed;
     bottom: 0;

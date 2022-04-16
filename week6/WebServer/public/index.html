@@ -24,18 +24,21 @@
             </header>
 
             <div class="content">
-                <form class="login" action="">
-                    <label for="username">
-                        Username:
-                        <input id="username" type="text" />
-                    </label>
-                    <label for="password">
-                        Password:
-                        <input id="password" type="password" />
-                    </label>
-                    <button type="button" onclick="doLogin(event)">Login</button>
-                    <a href = "./register.html">Register</a>
-                </form>
+                <p id="login-message"></p>
+                <div id="login-form">
+                    <form class="login" action="">
+                        <label for="username">
+                            Username:
+                            <input id="username" type="text" />
+                        </label>
+                        <label for="password">
+                            Password:
+                            <input id="password" type="password" />
+                        </label>
+                        <button type="button" onclick="doLogin(event)">Login</button>
+                        <a href = "./register.html">Register</a>
+                    </form>
+                </div>
             </div>
 
             <footer>

@@ -6,14 +6,12 @@ const doLogin = async (e) => {
     
     const res = await login({ username, password });
 
-    console.log(res);
-    //const { auth, access_token, refresh_token } = res;
-    const auth = !!res.user;
-    const access_token = res.token;
-    const refresh_token = res.token; //eventually populate differently
+    const autho = !!res.auth;
+    const access_token = res.access_token;
+    const refresh_token = res.refresh_token; 
 
-    if (res.msg === null || res.msg === undefined) {
-        setStorage('isAuth', auth);
+    if (res.msg === null || res.msg === 'Logged in!') {
+        setStorage('isAuth', autho);
         setStorage('access_token', access_token);
         setStorage('refresh_token', refresh_token);
 
@@ -38,10 +36,6 @@ const doRegister = (e) => {
     });
     
     console.log(res);
-    //const { auth, access_token, refresh_token } = res;
-    const auth = !!res.user;
-    const access_token = res.token;
-    const refresh_token = res.token; //eventually populate differently
 
     if (res.msg === null || res.msg === undefined) {
         logout(res);
@@ -75,9 +69,16 @@ const doLogout = (e) => {
       const isAuth = getStorage('isAuth');
       if (isAuth) {
         document.getElementById('logout').style.display = 'block';
+        const loginForm = document.getElementById('login-form');
+        console.log("loginForm" + loginForm);
+        if (!!loginForm) {
+            loginForm.style.display = 'none';
+            document.getElementById('login-message').innerText = "You are logged in.";
+        }
       }
     }
     else {
         document.getElementById('logout').style.display = 'none';
+
     }
 })();
