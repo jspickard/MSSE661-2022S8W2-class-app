@@ -1,4 +1,4 @@
-# Class App
+# Class Application
 - James Spickard
 - Regis University
 - MSSE661 - Web Software Development

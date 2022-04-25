@@ -19,7 +19,7 @@ const doLogin = async (e) => {
             setStorage('refresh_token', refresh_token);
             setStorage('expirationDate', expirationDate);
     
-            window.location.href = "quotes/quotes.html";
+            window.location.href = accountPage;
         } 
         else{
             throw res.msg;
@@ -47,7 +47,7 @@ const doRegister = (e) => {
         console.log(res);
     
         if (res.msg === null || res.msg === undefined) {
-            logout(res);
+            authService.logout(res);
             alert("You have been registered! You can now login."); 
             window.location.href = '/';
         } 
