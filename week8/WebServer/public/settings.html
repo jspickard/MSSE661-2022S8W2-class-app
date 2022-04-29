@@ -22,15 +22,22 @@
                         Username:
                         <input id="username" type="text" />
                     </label>
-                    <label for="password">
-                        Password:
-                        <input id="password" type="password" />
-                    </label>
                     <label for="email">
                         Email:
                         <input id="email" type="email" />
                     </label>
-                    <button type="button" onclick="doRegister(event)">Register</button>
+                    <button type="button" onclick="doUpdateUser(event)">Update User Info</button>
+                </form>
+                <form class="login"  action="">
+                    <label for="oldpassword">
+                        Old Password:
+                        <input id="oldpassword" type="password" />
+                    </label>
+                    <label for="newpassword">
+                        New Password:
+                        <input id="newpassword" type="password" />
+                    </label>
+                    <button type="button" onclick="doUpdatePassword(event)">Update Password</button>
                 </form>
             </div>
 
@@ -48,6 +55,7 @@
     <script src="./lib/service-helpers.js"></script>
     <script src="./lib/auth.js"></script>
     <script src="/lib/format.js"></script>
+    <script src="/lib/settings.js"></script>
     <script src="./app.js"></script>
 
 </html>

@@ -22,9 +22,11 @@ const doLogin = async (e) => {
             window.location.href = accountPage;
         } 
         else{
+            clearStorage('currentUser');
             throw res.msg;
         }
     } catch (error) {
+        clearStorage('currentUser');
         console.log(error)
         alert("Could not login.")
     }
@@ -80,6 +82,46 @@ const doLogout = (e) => {
         alert("Issues requesting logout to server.")
     }
 };
+
+const doUpdateUser = (e) => {
+    try {
+        e.preventDefault();
+        const currentUser = getStorage('currentUser');
+        const newUsername = document.getElementById("username").value;
+        const newEmail = document.getElementById("email").value;
+        const formdata = {
+            currentUser: currentUser, 
+            newUsername: newUsername, 
+            newEmail: newEmail,
+        };
+        authService.updateUser(formdata);
+        alert("User info updated!");
+    }
+    catch {
+        alert("Issues updating user info.")
+    }
+}
+
+const doUpdatePassword = (e) => {
+    try {
+        e.preventDefault();
+        const currentUser = getStorage('currentUser');
+        const oldpassword = document.getElementById("oldpassword").value;
+        const newpassword = document.getElementById("newpassword").value;
+        const formdata = {
+            currentUser: currentUser, 
+            oldpassword: oldpassword, 
+            newpassword: newpassword,
+        };
+        authService.updatePassword(formdata);
+        alert("User password updated!");
+    }
+    catch {
+        alert("Issues changing password.")
+    }
+}
+
+
 
 (() => {
     console.log(storageHasData());

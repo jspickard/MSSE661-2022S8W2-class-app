@@ -33,7 +33,7 @@ const _get = async (url, options = DEFAULT_OPTIONS_WITH_AUTH) => {
 }
 
 
-const _post = async (url, data, options = DEFAULT_OPTIONS) => {
+const _post = async (url, data, options = DEFAULT_OPTIONS_WITH_AUTH) => {
     const res = await fetch(url, {
         method: 'POST',
         ...options,

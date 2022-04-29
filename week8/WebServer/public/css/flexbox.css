@@ -62,6 +62,7 @@ li {
 .login {
     display: flex;
     flex-direction: column;
+    padding-right: 15px;
 }
 
 .quote-form {
